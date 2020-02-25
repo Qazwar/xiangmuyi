@@ -1,14 +1,20 @@
-#include<iostream>
-#include"msg.pb.h"
-#include"Codec.h"
-#include"Request.h"
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
 
 int main()
 {
+	//两个变量
+	int a, b;
 
-	RequestMsg reqMsg;
-	reqMsg.set_clientid("你好");
-	reqMsg.set_serverid("还不错");
+	//输入
+	scanf("%d %d", &a, &b);
+
+	if (b < 3)
+		a++;
+	else if (b < 2)
+		a = a + 2;
+	else
+		a += 3;
 
 	return 0;
 }
